@@ -20,7 +20,7 @@ public class VersionParam {
     /**
      * Search MMCore has not been initialize ? next function of networkRequest
      */
-    public static String getNetworkByModelMethod = "LZ";
+    public static String getNetworkByModelMethod = "Pw";
 
 
     public static String luckyMoneyReceiveUI = WECHAT_PACKAGE_NAME + ".plugin.luckymoney.ui.LuckyMoneyReceiveUI";
