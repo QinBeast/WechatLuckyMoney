@@ -20,7 +20,7 @@ public class VersionParam {
     /**
      * Search MMCore has not been initialize ? next function of networkRequest
      */
-    public static String getNetworkByModelMethod = "LZ";
+    public static String getNetworkByModelMethod = "Pw";
 
 
     public static String luckyMoneyReceiveUI = WECHAT_PACKAGE_NAME + ".plugin.luckymoney.ui.LuckyMoneyReceiveUI";
@@ -300,14 +300,25 @@ public class VersionParam {
                 getTransferRequest = WECHAT_PACKAGE_NAME + ".plugin.remittance.model.u";
                 hasTimingIdentifier = true;
                 break;
+            case "7.0.3":
+                receiveUIFunctionName = "c";
+                receiveUIParamName = "com.tencent.mm.ah.m";
+                networkRequest = "com.tencent.mm.model.av";
+                getNetworkByModelMethod = "Pw";
+                receiveLuckyMoneyRequest = WECHAT_PACKAGE_NAME + ".plugin.luckymoney.model.ap";
+                luckyMoneyReceiveUI = WECHAT_PACKAGE_NAME + ".plugin.luckymoney.ui.LuckyMoneyNotHookReceiveUI";
+                luckyMoneyRequest = WECHAT_PACKAGE_NAME + ".plugin.luckymoney.model.am";
+                getTransferRequest = WECHAT_PACKAGE_NAME + ".plugin.remittance.model.u";
+                hasTimingIdentifier = true;
+                break;
             default:
                 receiveUIFunctionName = "c";
                 receiveUIParamName = "com.tencent.mm.ah.m";
                 networkRequest = "com.tencent.mm.model.av";
-                getNetworkByModelMethod = "LZ";
-                receiveLuckyMoneyRequest = WECHAT_PACKAGE_NAME + ".plugin.luckymoney.c.ao";
+                getNetworkByModelMethod = "Pw";
+                receiveLuckyMoneyRequest = WECHAT_PACKAGE_NAME + ".plugin.luckymoney.model.ap";
                 luckyMoneyReceiveUI = WECHAT_PACKAGE_NAME + ".plugin.luckymoney.ui.LuckyMoneyNotHookReceiveUI";
-                luckyMoneyRequest = WECHAT_PACKAGE_NAME + ".plugin.luckymoney.c.al";
+                luckyMoneyRequest = WECHAT_PACKAGE_NAME + ".plugin.luckymoney.model.am";
                 getTransferRequest = WECHAT_PACKAGE_NAME + ".plugin.remittance.model.u";
                 hasTimingIdentifier = true;
         }
